@@ -13,19 +13,19 @@
             <form id="frm-param_exp" method="POST" action="print_form/score_report_exp.php" target="_blank">
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="des" class="phetsarath">ເນື້ອໃນໃບປະເມີນວິຊາການ</label>
+                        <label for="title_des" class="phetsarath">ເນື້ອໃນໃບປະເມີນວິຊາການ</label>
                         <input type="text" class="form-control phetsarath center none-select none-outline" 
-                        id="des" name="des" 
+                        id="title_des" name="title_des" 
                         value="ລາຍງານຜົນການປະເມີນພະນັກງານວິຊາການຂັ້ນ ..."
                         required>
                     </div>
                 </div>
                 <div class="modal-footer" style="justify-content:center;">
-                    <button onclick="print_report_exp()" type="button" name="print" class="cus-btn btn btn-primary btn-icon-text phetsarath none-outline none-select">
+                    <button onclick="export_to_excel()" type="button" name="print" class="cus-btn btn btn-primary btn-icon-text phetsarath none-outline none-select">
                         ຕົກລົງ
                         <i class="fas fa-file-excel btn-icon-append"></i>                                                                             
                     </button>
-                    <button type="button" class="cus-btn btn btn-warning btn-icon-text phetsarath none-outline none-select" data-dismiss="modal">
+                    <button id="btn_close" type="button" class="cus-btn btn btn-warning btn-icon-text phetsarath none-outline none-select" data-dismiss="modal">
                         ຍົກເລີກ
                         <i class="fas fa-times btn-icon-append"></i>                                                                            
                     </button>

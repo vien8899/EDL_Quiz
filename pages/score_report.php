@@ -160,15 +160,43 @@ include_once("modals/print_param_exp_modal.php");
 ?>
 <script src="assets/js/custom_js/report_filter.js"></script>
 <script src="assets/js/custom_js/score_report.js"></script>
-<script src="assets/js/custom_js/score_report_exp.js"></script>
+<script src="module/xlsx-style/dist/xlsx.core.min.js"></script>
+<script src="module/file-saver/dist/FileSaver.min.js"></script>
+<script src="print_form/forexport/excel_export.js"></script>
 <script>
   var data = JSON.parse('<?=json_encode($data)?>');
   var exam_date = '<?=$exam_date?>';
+  let title_des = document.getElementById('title_des');
+  let export_dialog = document.getElementById('param_exp');
   function toggle(source){
     var chb = document.getElementsByName('cb_student[]');
     for(let i=0; i < chb.length; i++){
       chb[i].checked = source.checked;
     }
+  }
+  async function export_to_excel(){
+    let students = document.getElementsByName('cb_student[]');
+    let student_checked = [];
+    students.forEach(student => {
+        if (student.checked) {
+            student_checked.push(student.value);
+        }
+    });
+    if(student_checked.length==0){
+        Swal.fire({icon:'info',html:'<span class=phetsarath>ກະລຸນາເລືອກຂໍ້ມູນນັກສອບເສັງກ່ອນ!</span>'});
+    }else{
+      if(exam_date==''){
+            Swal.fire({icon:'info',html:'<span class=phetsarath>ກະລຸນາເລືອກວັນທີ່ເສັງຢູ່ Filter ກ່ອນ!</span>'});
+      }else{
+        let _param = [];
+        student_checked.forEach(index=>{
+          _param.push(data[index]);
+        });
+        await export_data(_param);
+      }
+    }
+    // $("[data-dismiss=modal]").trigger({ type: "click" });
+    $('#btn_close').click();
   }
   $( document ).ready(function() {
     if(data.length!=0){
