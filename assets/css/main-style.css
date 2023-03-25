@@ -1,0 +1,322 @@
+.modal-header{
+    padding: 10px 26px !important;
+}
+.modal-close-lb{
+    color: #fff !important;
+    font-weight: bolder !important;
+    font-size: 18pt !important;
+}
+.modal-dialog{
+    margin: 1.75rem auto !important;
+}
+.modal-content{
+    border: none !important;
+}
+.nav{
+	height: 60px;
+	box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.2);
+}
+.nav-content{
+	max-width: 1200px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: auto;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 220px;
+}
+.nav-user{
+	justify-self: end;
+}
+.top-menu{
+	right: 0 !important;
+}
+.dropdown-item{
+	padding-top: 7px !important;
+	padding-bottom: 7px !important;
+}
+.logo-02{
+	display: none;
+}
+rect{
+    text-align: center !important;
+}
+.tab-ico{
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+._container{
+	padding:0;
+	margin:10px;
+	border-radius:5px;
+}
+
+header {
+	position: relative;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.hide {
+		display: none;
+}
+
+.tab-content {
+	border: none !important;
+	padding:15px;
+	max-width: 1200px;
+	margin: auto;
+}
+.header{
+    border-bottom: 1px solid #e0e0e0;
+}
+#material-tabs {
+	position: relative;
+	display: block;
+    padding:0;
+    width: fit-content;
+    margin: auto;
+}
+
+#material-tabs>a {
+	position: relative;
+	display:inline-block;
+	text-decoration: none;
+	padding: 22px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+	color: #424f5a;
+	text-align: center;
+}
+
+#material-tabs>a.active {
+		font-weight: 700;
+		outline:none;
+}
+
+#material-tabs>a:not(.active):hover {
+	background-color: inherit;
+	color: #7c848a;
+}
+
+@media only screen and (max-width: 520px) {
+	.nav-tabs#material-tabs>li>a {
+		font-size: 11px;
+	}
+}
+
+.yellow-bar {
+	position: absolute;
+	z-index: 10;
+	bottom: -2px;
+	height: 3px;
+	background: #458CFF;
+	display: block;
+	left: 0;
+	transition: left .2s ease;
+	-webkit-transition: left .2s ease;
+}
+
+#tab1-tab.active ~ span.yellow-bar {
+	left: 0;
+	width: 80px;
+}
+
+#tab2-tab.active ~ span.yellow-bar {
+	left:84px;
+	width: 105px;
+}
+
+#tab3-tab.active ~ span.yellow-bar {
+	left: 209px;
+	width: 97px;
+}
+
+.chart-section{
+	display: flex;
+	width: 100%;
+	flex-flow: row wrap;
+	justify-content:center;
+}
+.top-items{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-items: center;
+	width: fit-content;
+	margin: auto;
+	column-gap: 15px;
+  	row-gap: 10px;
+}
+.top-item{
+	width: fit-content;
+	overflow: auto;
+	border-radius: 5px;
+	box-shadow: 3px 3px 8px #888888;
+	margin-bottom: 15px;
+}
+
+.new-occ-ico{
+	padding: 5px;
+	background-color: rgb(235, 235, 100);
+	width: 80px;
+	text-align: center;
+	float: left;
+}
+.all-car-ico{
+	padding: 5px;
+	background-color: rgb(243, 151, 228);
+	width: 80px;
+	text-align: center;
+	float: left;
+}
+.active-car-ico{
+	padding: 5px;
+	background-color: rgb(132, 133, 133);
+	width: 80px;
+	text-align: center;
+	float: left;
+}
+.new-occ-content{
+	width: 250px;
+	height: 100%;
+	padding-top: 11px;
+	text-align: center;
+}
+.new-occ-count{
+	padding-bottom: 5px;
+}
+.top-item-title{
+	font-size: 12px;
+}
+.btn-ft,.btn-export{
+	border: none;
+	border-radius: 5px;
+	padding-top: 5px;
+}
+.btn-export{
+	background-color: rgb(178, 209, 190);
+}
+.btn-filter,.btn-exp{
+	display: grid;
+	width: fit-content;
+	padding: 5px 10px 2px 10px;
+	grid-template-columns: 22px 1fr;
+	column-gap: 10px;
+	cursor: pointer;
+}
+.btn-filter-frame{
+	position: absolute;
+	top: 5px;
+	left: 10px;
+}
+.btn-export-frame{
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}
+.card-header{
+	position: relative;
+	height: 50px;
+}
+.filter-box{
+	max-width: 1000px;
+	margin: auto;
+}
+.card-body{
+	padding: 10px;
+}
+.depart{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.dep-item,.car-status-item,.cartype-item{
+	float: left;
+	padding-right: 15px;
+	text-align: left;
+}
+.car-status{
+	overflow: auto;
+	padding-bottom: 10px;
+	margin-bottom: 5px;
+	border-bottom: 0.5px dotted rgb(190, 187, 187);
+}
+.cartype{
+	overflow: auto;
+	padding-bottom: 10px;
+}
+.depart-title,.status-title,.car-date-title{
+	text-align: left;
+}
+.car-date-item,.depart{
+	text-align: left;
+	padding-bottom: 10px;
+	margin-bottom: 5px;
+	border-bottom: 0.5px dotted rgb(190, 187, 187);
+}
+.calender-ico{
+	padding-top: 5px;
+}
+.btn-calendar{
+	width: 150px;
+	margin-right: 10px;
+	display: grid;
+	grid-template-columns: 1fr 30px;
+	align-items: center;
+}
+.tb-header{
+	background-color: gray;
+	color: white;
+}
+.tb-header th{
+	padding-top: 5px !important;
+	padding-bottom: 3px !important;
+}
+.green{
+	background-color: darkgreen;
+	color: white;
+}
+.light-gray{
+	background-color: rgb(233, 231, 231);
+	color: black;
+}
+.dark{
+	background-color: black;
+	color: white;
+}
+.yellow{
+	background-color: rgb(236, 202, 9);
+	color: white;
+}
+.lb {
+	display: inline-block;
+	position: relative;
+	line-height: 0;
+  }
+#start_date,#end_date {
+	position: absolute;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	overflow: hidden;
+	cursor: pointer;
+}
+#start_date::-webkit-calendar-picker-indicator,
+#end_date::-webkit-calendar-picker-indicator {
+	position: absolute;
+	top: -150%;
+	left: -150%;
+	width: 300%;
+	height: 300%;
+	cursor: pointer;
+}
+@media(max-width:600px){
+	.logo-02{
+		display: block;
+	}
+	.logo-01{
+		display: none;	
+	}
+}

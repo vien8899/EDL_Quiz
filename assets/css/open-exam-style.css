@@ -1,0 +1,47 @@
+.inp{
+    line-height: 1.5rem !important;
+}
+.calender-ico{
+	padding-top: 5px;
+}
+.bottom-0{
+    margin-bottom: 0 !important;
+}
+.btn-calendar{
+	width: 100%;
+	margin-right: 10px;
+	display: grid;
+	grid-template-columns: 1fr 30px;
+	align-items: center;
+    line-height: 36px;
+    border: 1px solid darkgrey;
+    border-radius: 4px;
+}
+.btn-time{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+.lb {
+    width: 100%;
+	display: inline-block;
+	position: relative;
+	line-height: 36px;
+  }
+#start_time, #end_time {
+	position: absolute !important;
+	opacity: 0 !important;
+	width: 100% !important;
+	height: 100% !important;
+	border: 0 !important;
+	overflow: hidden !important;
+	cursor: pointer !important;
+    line-height: 36px !important;
+}
+#start_time::-webkit-calendar-picker-indicator, #end_time::-webkit-calendar-picker-indicator {
+	position: absolute !important;
+	top: -150% !important;
+	left: -150% !important;
+	width: 300% !important;
+	height: 300% !important;
+	cursor: pointer !important;
+}

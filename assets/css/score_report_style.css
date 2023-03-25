@@ -1,0 +1,75 @@
+.b{
+    font-weight: bolder !important;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+td,tr{
+    height: 45px !important;
+}
+td{
+    word-wrap: break-word !important;
+}
+table, th, td {
+    border: 1px solid;
+}
+.content{
+    max-width: 1200px;
+    margin: auto;
+}
+.top-title{
+    font-weight: bolder;
+}
+.middle-info{
+    display: grid;
+    grid-template-columns: 1fr 130px 1fr;
+    margin-top: 15px;
+}
+.company-logo{
+    padding-top: 20px;
+}
+.main-title{
+    padding-top: 15px;
+}
+.doc-info{
+    align-self: center;
+}
+.content-info{
+    padding-left: 75px;
+    margin-top: 20px;
+}
+.doc-end-1{
+    padding-left: 75px;
+    margin-top: 15px;
+}
+.doc-signature{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.hidden-ico{
+    display: none !important;
+}
+footer{
+    display: none;
+}
+@page {
+    size: A4 landscape;
+    margin: 11mm 17mm 7mm 17mm;
+}
+@media print
+{   
+    .hidden-ico{
+        display: none !important;
+    }
+    footer {
+        display: block;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
+    .new-page {
+        page-break-before: always !important;
+        /* page-break-inside: avoid; */
+    }
+}

@@ -1,0 +1,40 @@
+.inp{
+    line-height: 1.5rem !important;
+}
+.calender-ico{
+	padding-top: 5px;
+}
+.btn-calendar{
+	width: 100%;
+	margin-right: 10px;
+	display: grid;
+	grid-template-columns: 1fr 30px;
+	align-items: center;
+    line-height: 36px;
+    border: 1px solid darkgrey;
+    border-radius: 4px;
+}
+.lb {
+    width: 100%;
+	display: inline-block;
+	position: relative;
+	line-height: 36px;
+  }
+#date_of_birth {
+	position: absolute;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	overflow: hidden;
+	cursor: pointer;
+    line-height: 36px;
+}
+#date_of_birth::-webkit-calendar-picker-indicator {
+	position: absolute;
+	top: -150%;
+	left: -150%;
+	width: 300%;
+	height: 300%;
+	cursor: pointer;
+}

@@ -1,0 +1,103 @@
+.first{
+    border-radius: 15px 0 0 15px !important;
+}
+.rd{
+    margin-bottom: 0 !important;
+}
+.subject{
+    max-width: 300px;
+}
+.top-content{
+    row-gap: 5px;
+    column-gap: 10px;
+    padding-bottom: 5px;
+}
+.content-new-ques{
+    grid-template-columns: auto auto 1fr !important;
+}
+.txt-score{
+    line-height: 34px !important;
+    border-radius: 0.25rem !important;
+    border: 1px solid #ced4da !important;
+    text-align: center;
+}
+.cke_txt_question{
+    font-family: 'PhetsarathOTModified280414' !important;
+}
+.submit-btn{
+    width: fit-content;
+    margin: 5px auto;
+}
+.txt-correct-ans{
+    width: 100%;
+    line-height: 30px;
+    border: solid 1px lightgrey !important;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.cke_textarea_inline{
+    border: solid 1px lightgrey;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: 'PhetsarathOTModified280414' !important;
+}
+.btn-remove-choice{
+    min-width: 50px;
+    border-radius: 0.25rem;
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+}
+.btn-add-ans{
+    min-width: 50px;
+    border-radius: 0.25rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.choice-item{
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+}
+.btn-choice{
+    margin-bottom: 0px !important;
+    border-radius: 0.25rem;
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+    /* margin-left: 5px !important; */
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    -khtml-user-select:none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    -khtml-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+@media(max-width:700px){
+    .content-new-ques{
+        grid-template-columns: auto 1fr !important;
+    }
+}
+@media(max-width:420px){
+    .top-content{
+        grid-template-columns: 1fr !important;
+    }
+    .subjection-selection{
+        grid-column: 1/1;
+        grid-row: 1/1;
+    }
+    .subject,.txt-score{
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}

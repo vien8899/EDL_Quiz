@@ -1,0 +1,33 @@
+.title{
+    padding:10px 5px;
+    border-bottom: 0.5px dotted var(--main-color);
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.subj-info{
+    max-width: 1200px;
+    margin: auto;
+    border-bottom: 0.5px dotted var(--main-color);
+    margin-bottom: 5px;
+}
+.test-info{
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.subj-name{
+    font-size: 14pt;
+    padding: 5px 25px;
+    width: fit-content;
+    background-color: var(--main-color);
+    color: white;
+    margin: auto;
+    border-radius: 50px;
+}
+.content-footer{
+    padding-bottom: 20px;
+}
+.action-btn .btn{
+    min-width: 150px !important;
+}

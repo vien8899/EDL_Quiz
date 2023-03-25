@@ -1,0 +1,78 @@
+:root {
+    --main-color: #0B2139;
+}
+@font-face {
+    font-family: "PhetsarathOTModified280414";
+    src: url("../fonts/phetsarathOT/PhetsarathOT.eot");
+    src: url("../fonts/phetsarathOT/PhetsarathOT.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/phetsarathOT/PhetsarathOT.otf") format("opentype"),
+    url("../fonts/phetsarathOT/PhetsarathOT.svg") format("svg"),
+    url("../fonts/phetsarathOT/PhetsarathOT.ttf") format("truetype"),
+    url("../fonts/phetsarathOT/PhetsarathOT.woff") format("woff"),
+    url("../fonts/phetsarathOT/PhetsarathOT.woff2") format("woff2");
+}
+.f9{
+    font-size: 9pt !important;
+}
+.f11{
+    font-size: 11pt !important;
+}
+.f12{
+    font-size: 12pt !important;
+}
+.f14{
+    font-size: 14pt !important;
+}
+.f16{
+    font-size: 16pt !important;
+}
+.center{
+    text-align: center !important;
+}
+.right{
+    text-align: right !important;
+}
+.phetsarath{
+    font-family: 'PhetsarathOTModified280414' !important;
+}
+.none-outline{
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    -khtml-user-select:none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.none-select{
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    -khtml-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+.pointer{
+    cursor: pointer !important;
+}
+.top-act{
+    display: flex;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+select{
+    color: black !important;
+}
+.swal2-container.swal2-center>.swal2-popup{
+    padding-top: 30px !important;
+}
+a.disabled {
+    pointer-events: none !important;
+    cursor: default !important;
+    text-decoration: line-through !important;
+    color: #6c757d !important;
+}

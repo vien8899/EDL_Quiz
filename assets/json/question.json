@@ -1,0 +1,38 @@
+[{
+    "title":"",
+    "question":"",
+    "ans_choice":[],
+    "correct_ans":[],
+    "question_type":1,
+    "subj_id":1,
+    "user_id":1,
+    "show_ques_content":0,
+    "full_point":1
+},
+
+{
+    "id":"",
+    "quiz_quest_id":"",
+    "test_number":"",
+    "question_title":"",
+    "question_des":"",
+    "ans_choice":[
+        {
+            "index":"",
+            "rang":"",
+            "choice":"",
+            "is_selected":0
+        }
+    ],
+    "correct_ans":[
+
+    ],
+    "answer":"",
+    "full_point":1,
+    "point":1,
+    "question_rang":1,
+    "question_type":0,
+    "show_ques_content":1
+}
+
+]

@@ -1,0 +1,42 @@
+.frm-login{
+    width: 250px;
+    margin: auto;
+}
+.lb-caption{
+    text-align: center;
+    font-size: 16pt;
+    font-weight: bolder;
+}
+.sys-ico{
+    text-align: center;
+}
+.inp{
+    width: 100%;
+    margin: 4px 0;
+    font-size: 12pt;
+    line-height: 35px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 0.5px solid var(--main-color);
+}
+.chb{
+    margin-bottom: 20px;
+}
+.frm-btn{
+    text-align: center;
+}
+.btn-login{
+    font-size: 12pt;
+    line-height: 35px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 4px 0;
+    border: 0.5px solid var(--main-color);
+}
+.login-alert{
+    max-width: 750px !important;
+    margin: auto !important;
+}
+.hidden-ico{
+    display: none !important;
+}

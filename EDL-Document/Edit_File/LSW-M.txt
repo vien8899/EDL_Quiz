@@ -1,0 +1,6 @@
+'If not get schedule_task_or_check
+        If (schedule_task_or_check = "") Then
+            Sql = "SELECT is_task_or_check FROM TB_REC_TASK_CHECK WHERE(rec_task_id_auto= " & id_edit_task & ")"
+            dt = ExecuteDatable(Sql)
+            schedule_task_or_check = CStr(dt.Rows(0).Item("is_task_or_check"))
+        End If

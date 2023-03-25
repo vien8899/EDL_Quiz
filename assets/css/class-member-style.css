@@ -1,0 +1,26 @@
+.top-act{
+    display: flex;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.txt-search{
+    border: solid gray 1px !important;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.btn-search{
+    border-radius: 5px !important;
+    min-width: 100px;
+}
+td{
+    line-height: 2 !important;
+}
+.lb-fullname,.lb-department{
+    width: 100% !important;
+    cursor: pointer;
+}
+.submit-btn{
+    text-align: center;
+    padding-top: 10px;
+}
